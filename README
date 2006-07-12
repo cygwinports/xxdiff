@@ -1,0 +1,193 @@
+xxdiff
+-------------------------------------------
+A graphical file and directories comparator and merge tool for Qt.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  diffutils-2.8.7-1
+  python-2.4.3-1
+  qt3-3.3.6-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.20-1
+  binutils-20050610-1
+  bison-2.1-1
+  cygport-0.2.2-1
+  flex-2.5.33-1
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  make-3.80-1
+  sed-4.1.5-1
+
+Canonical homepage:
+  http://xxdiff.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/xxdiff/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xxdiff-3.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xxdiff-3.2-X.cygport all
+
+This will create:
+  /usr/src/xxdiff-3.2-X-src.tar.bz2
+  /usr/src/xxdiff-3.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/svn-foreign
+  /usr/bin/xx-cond-replace
+  /usr/bin/xx-cvs-diff
+  /usr/bin/xx-cvs-revcmp
+  /usr/bin/xx-diff-proxy
+  /usr/bin/xx-encrypted
+  /usr/bin/xx-filter
+  /usr/bin/xx-find-grep-sed
+  /usr/bin/xx-match
+  /usr/bin/xx-pyline
+  /usr/bin/xx-rename
+  /usr/bin/xx-sql-schemas
+  /usr/bin/xx-svn-diff
+  /usr/bin/xx-svn-resolve
+  /usr/bin/xxdiff.exe
+  /usr/lib/python2.4/site-packages/xxdiff/__init__.py
+  /usr/lib/python2.4/site-packages/xxdiff/__init__.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/__init__.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/backup.py
+  /usr/lib/python2.4/site-packages/xxdiff/backup.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/backup.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/checkout.py
+  /usr/lib/python2.4/site-packages/xxdiff/checkout.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/checkout.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/condrepl.py
+  /usr/lib/python2.4/site-packages/xxdiff/condrepl.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/condrepl.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/editor.py
+  /usr/lib/python2.4/site-packages/xxdiff/editor.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/editor.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/history.py
+  /usr/lib/python2.4/site-packages/xxdiff/history.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/history.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/invoke.py
+  /usr/lib/python2.4/site-packages/xxdiff/invoke.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/invoke.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/mapcompare.py
+  /usr/lib/python2.4/site-packages/xxdiff/mapcompare.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/mapcompare.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/patches.py
+  /usr/lib/python2.4/site-packages/xxdiff/patches.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/patches.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/resilient.py
+  /usr/lib/python2.4/site-packages/xxdiff/resilient.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/resilient.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scm/__init__.py
+  /usr/lib/python2.4/site-packages/xxdiff/scm/__init__.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scm/__init__.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scm/clearcase.py
+  /usr/lib/python2.4/site-packages/xxdiff/scm/clearcase.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scm/clearcase.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scm/cvs.py
+  /usr/lib/python2.4/site-packages/xxdiff/scm/cvs.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scm/cvs.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scm/subversion.py
+  /usr/lib/python2.4/site-packages/xxdiff/scm/subversion.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scm/subversion.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/__init__.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/__init__.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/__init__.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/condreplace.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/condreplace.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/condreplace.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/cvsdiff.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/cvsdiff.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/cvsdiff.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/cvsrevcmp.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/cvsrevcmp.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/cvsrevcmp.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/diffproxy.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/diffproxy.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/diffproxy.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/encrypted.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/encrypted.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/encrypted.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/filter.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/filter.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/filter.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/findgrepsed.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/findgrepsed.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/findgrepsed.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/match.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/match.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/match.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/patch.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/patch.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/patch.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/pyline.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/pyline.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/pyline.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/rename.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/rename.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/rename.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/sqlschemas.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/sqlschemas.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/sqlschemas.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svndiff.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svndiff.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svndiff.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svnforeign.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svnforeign.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svnforeign.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svnresolve.py
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svnresolve.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/scripts/svnresolve.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/selectfiles.py
+  /usr/lib/python2.4/site-packages/xxdiff/selectfiles.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/selectfiles.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/utils.py
+  /usr/lib/python2.4/site-packages/xxdiff/utils.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/utils.pyo
+  /usr/lib/python2.4/site-packages/xxdiff/xformloop.py
+  /usr/lib/python2.4/site-packages/xxdiff/xformloop.pyc
+  /usr/lib/python2.4/site-packages/xxdiff/xformloop.pyo
+  /usr/share/doc/Cygwin/xxdiff-3.2.README
+  /usr/share/doc/xxdiff-3.2/COPYING
+  /usr/share/doc/xxdiff-3.2/Changes
+  /usr/share/doc/xxdiff-3.2/README
+  /usr/share/doc/xxdiff-3.2/TODO
+  /usr/share/doc/xxdiff-3.2/html/equals.png
+  /usr/share/doc/xxdiff-3.2/html/horiz.png
+  /usr/share/doc/xxdiff-3.2/html/perhunk.png
+  /usr/share/doc/xxdiff-3.2/html/rma.png
+  /usr/share/doc/xxdiff-3.2/html/screenshot-sql-schema-compare.png
+  /usr/share/doc/xxdiff-3.2/html/select.png
+  /usr/share/doc/xxdiff-3.2/html/xxdiff-doc.html
+  /usr/share/doc/xxdiff-3.2/html/xxdiff-integration.html
+  /usr/share/doc/xxdiff-3.2/html/xxdiff-scripts.html
+  /usr/share/doc/xxdiff-3.2/html/xxdiff-secrets.html
+
+------------------
+
+Port Notes:
+
+----- version 3.2-1 -----
+Major version bump.
+The sources now include optional KDE support; I did not activate that 
+in this release, but if it is desired, it does work and I could do so.
+
+----- version 3.0.4-1 -----
+Upstream version bump.
+
+----- version 3.0.2-2 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
