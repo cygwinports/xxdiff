@@ -1,0 +1,12 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/xxdiff-3.2/src/xxdiff.pro src/xxdiff-3.2/src/xxdiff.pro
+--- origsrc/xxdiff-3.2/src/xxdiff.pro	2006-05-31 21:30:25.000000000 -0500
++++ src/xxdiff-3.2/src/xxdiff.pro	2007-07-15 22:44:26.578125000 -0500
+@@ -37,7 +37,7 @@
+ # To enable KDE support, uncomment the following lines:
+ #QMAKE_CFLAGS += -DXX_KDE -I/usr/include/kde
+ #QMAKE_CXXFLAGS += -DXX_KDE -I/usr/include/kde
+-#QMAKE_LIBS += -lkdeui -lkio -lqt-mt
++#QMAKE_LIBS += -lkdeui -lkio -lkdecore
+ 
+ 
+ # Enable debugging modes within xxdiff.
