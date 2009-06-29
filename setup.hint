@@ -1,4 +1,4 @@
 category: Devel KDE
-requires: cygwin diffutils python qt3
+requires: diffutils python qt3
 sdesc: "Graphical diff and merge tool for Qt"
 ldesc: "A graphical file and directories comparator and merge tool for Qt."
