@@ -1,0 +1,36 @@
+inherit python-distutils qt3
+
+NAME="xxdiff"
+VERSION=3.2
+RELEASE=3
+CATEGORY="Devel"
+SUMMARY="Graphical diff and merge tool for Qt"
+DESCRIPTION="A graphical file and directories comparator and merge tool for Qt."
+HOMEPAGE="http://furius.ca/xxdiff/"
+SRC_URI="mirror://sourceforge/xxdiff/xxdiff-${VERSION}.tar.bz2"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/xxdiff.git/plain/xxdiff-fix-cstdlib_h.patch
+	http://pkgs.fedoraproject.org/cgit/xxdiff.git/plain/xxdiff-3.2-c-linkage.patch
+	http://pkgs.fedoraproject.org/cgit/xxdiff.git/plain/xxdiff-3.2-string-constants.patch
+"
+
+xxdiff_REQUIRES="diffutils"
+
+src_compile() {
+	lndirs
+	cd ${B}/src
+	cygmake -f Makefile.bootstrap makefile
+	cygmake all
+
+	cd ${B}
+	python_distutils_compile
+}
+
+src_install() {
+	cd ${B}
+	dobin bin/xxdiff.exe
+	python_distutils_install
+
+	docinto html
+	dodoc doc/*.html doc/*.png
+}
