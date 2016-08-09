@@ -1,0 +1,11 @@
+--- origsrc/xxdiff-4.0.1/src/help.cpp	2016-05-15 17:55:57.000000000 -0500
++++ src/xxdiff-4.0.1/src/help.cpp	2016-08-08 22:17:47.822822500 -0500
+@@ -37,7 +37,7 @@
+ #include <QtGui/QVBoxLayout>
+ 
+ namespace XX_NAMESPACE_PREFIX { namespace Manual {
+-#if !defined(WINDOWS) && !defined(__CYGWIN__)
++#if !defined(WINDOWS)
+ #include <doc.h>
+ #else
+ char text[]="<h1>xxdiff documentation</h1><p>Not available under Windows.</p>";
